@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 32px;
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+    border-radius: 16px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #58a6ff;
+    font-size: 30px;
+}
+
+p {
+    color: #9da7b3;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+
+    margin-top: 18px;
+    margin-bottom: 7px;
+
+    color: #e6edf3;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #30363d;
+    border-radius: 9px;
+
+    background: #0d1117;
+    color: #e6edf3;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input::placeholder {
+    color: #6e7781;
+}
+
+input:focus {
+    border-color: #58a6ff;
+
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 24px;
+}
+
+button {
+    padding: 12px 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #58a6ff;
+    color: #07111f;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #79b8ff;
+
+    transform: translateY(-1px);
+}
+
+button.secundario {
+    background: #30363d;
+    color: #e6edf3;
+}
+
+button.secundario:hover {
+    background: #484f58;
+}
+
+#resultado {
+    min-height: 24px;
+
+    margin-top: 22px;
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: #0d1117;
+
+    color: #e6edf3;
+    font-weight: bold;
+}
+
+.dica {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-left: 4px solid #58a6ff;
+    border-radius: 6px;
+
+    background: #111820;
+
+    font-size: 14px;
+}
+
+.dica strong {
+    color: #58a6ff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .botoes {
+        grid-template-columns: 1fr;
+    }
+}
