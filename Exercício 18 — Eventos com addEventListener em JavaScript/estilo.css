@@ -5,7 +5,9 @@
 body {
     margin: 0;
     min-height: 100vh;
+
     font-family: Arial, Helvetica, sans-serif;
+
     background: #0d1117;
     color: #e6edf3;
 }
@@ -16,13 +18,51 @@ main {
     padding: 36px 0;
 }
 
-h1 { margin-top: 0; }
-p { color: #9da7b3; line-height: 1.55; }
+section {
+    background: #161b22;
 
-label { display: block; margin: 14px 0 6px; font-weight: bold; }
-textarea { width: 100%; min-height: 130px; padding: 10px 12px; border: 1px solid #30363d; border-radius: 9px; resize: vertical; background: #161b22; color: #e6edf3; font: inherit; }
-.resultado { min-height: 24px; margin-top: 18px; color: #c9d1d9; }
+    border: 1px solid #30363d;
+    border-radius: 14px;
+
+    padding: 22px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    color: #9da7b3;
+    line-height: 1.55;
+}
+
+button {
+    min-height: 44px;
+
+    padding: 9px 15px;
+
+    border: 0;
+    border-radius: 9px;
+
+    background: #58a6ff;
+    color: #07111f;
+
+    font: inherit;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #79b8ff;
+}
+
+.mensagem {
+    min-height: 24px;
+}
 
 @media (max-width: 620px) {
-    main { padding-top: 20px; }
+    main {
+        padding-top: 20px;
+    }
 }
